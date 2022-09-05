@@ -23,6 +23,7 @@ pipeline {
       agent any
       steps {
         echo 'deploy to app'
+        input(message: 'still do u want to deploy', id: 'ok')
       }
     }
 
