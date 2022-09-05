@@ -6,6 +6,7 @@ pipeline {
         stage('build') {
           steps {
             echo 'buliding'
+            echo '"get the driver path of $(Chromrdriverpath)"'
           }
         }
 
@@ -25,5 +26,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    Chromrdriverpath = 'd:\\cent\\'
   }
 }
